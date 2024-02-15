@@ -14,7 +14,7 @@ const validate = (req,res,next) => {
     if(!weight) return res.status(400).send({error: "Missing weight"})
     next();
 }
-module.exports = validate;
+module.exports = validate; 
 
 
 //Preguntar luego
