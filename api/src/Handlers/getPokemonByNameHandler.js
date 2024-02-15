@@ -7,4 +7,4 @@ module.exports=async(req,res)=>{
     } catch (error) {
         res.status(404).send('Pokemon no encontrado')
     }
-} 
+}  

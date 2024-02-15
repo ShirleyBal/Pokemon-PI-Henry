@@ -21,7 +21,7 @@ module.exports=async(id)=>{
                   name: e.type.name,
                   img: `https://typedex.app/images/ui/types/dark/${e.type.name}.svg`,
               })
-        }),
+        }), 
         }
         return pokemon 
         }else{

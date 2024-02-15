@@ -21,7 +21,7 @@ module.exports = (sequelize) => {
     life:{
       type:DataTypes.STRING,
       allowNull:false
-    },
+    }, 
     stroke:{
       type:DataTypes.STRING,
       allowNull:false

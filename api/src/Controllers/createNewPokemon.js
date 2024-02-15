@@ -6,7 +6,7 @@ module.exports=async({name,image,life,stroke,defending,speed,height,weight,type}
     const create = await Pokemon.create({
         name,
         image,
-        life,
+        life, 
         stroke,
         defending,
         speed,

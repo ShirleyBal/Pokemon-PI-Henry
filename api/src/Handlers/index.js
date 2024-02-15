@@ -7,4 +7,4 @@ module.exports={
     getPokemonByNameHandler:require('./getPokemonByNameHandler'),
     getTypesHandler:require('./getTypesHandler'),
     createNewPokemonHandler:require('./createNewPokemonHandler'),
-}
+} 

@@ -7,7 +7,7 @@ module.exports = async () => {
     const pokemonsDB = await Pokemon.findAll({
       include: [
         { model: Type, attributes: ["name"]}
-      ],
+      ], 
     }); ///buscamos en nuestra db si hay informacion de pokemones
     const pokemonsApiPageOne = await axios.get(URL_API);
   

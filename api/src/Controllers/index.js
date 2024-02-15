@@ -4,4 +4,4 @@ module.exports={
     getPokemonByName:require('./getPokemonByName'),
     getAllPokemonsTypes:require('./getAllPokemonsTypes'),
     createNewPokemon:require('./createNewPokemon'),
-}
+} 
