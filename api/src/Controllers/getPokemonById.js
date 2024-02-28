@@ -1,6 +1,6 @@
 const axios =require('axios')
 const { URL_API } = process.env;
-const {Pokemon} =require('../db');
+const {Pokemon,Type} =require('../db');
 const { Error } = require('sequelize');
 module.exports=async(id)=>{
     try {
@@ -25,7 +25,13 @@ module.exports=async(id)=>{
         }
         return pokemon 
         }else{
-           const pokemondb= await Pokemon.findByPk(id)
+           const pokemondb= await Pokemon.findByPk(id,{
+            include: [
+                { model: Type, attributes: ["name"]}
+              ]
+           })
+
+      
            return pokemondb
         }
     }catch (error) {

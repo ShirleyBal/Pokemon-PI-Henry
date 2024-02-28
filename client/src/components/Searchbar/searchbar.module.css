@@ -1,0 +1,14 @@
+/* En el archivo searchbar.module.css */
+
+.searchbarconteiner {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Para alinear a la derecha */
+    margin-right: 20px; /* Puedes ajustar el margen según sea necesario */
+  }
+  
+  /* Estilos para el input y el botón */
+  .searchbarconteiner input {
+    /* Estilos para el input */
+    margin-right: 10px; /* Espacio entre el input y el botón */
+  }

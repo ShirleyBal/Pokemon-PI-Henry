@@ -4,7 +4,7 @@ const { URL_API } = process.env;
 module.exports=async(name)=>{
 
     try {
-        const pokemondb=await Pokemon.findOne({where:{name:name}})// de mentira por ahora. se hara una busqueda en la db  
+        const pokemondb=await Pokemon.findOne({where:{name:name}})// se hara una busqueda en la db  
     if(!pokemondb){//si no hay resultado, entonces buscamos en la api
             const request=await axios.get(`${URL_API}/${name}`);
             const pokemon={

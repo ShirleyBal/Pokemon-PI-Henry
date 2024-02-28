@@ -17,22 +17,4 @@ const validate = (req,res,next) => {
 module.exports = validate; 
 
 
-//Preguntar luego
-// const express = require('express');
-// const { createNewPokemon } = require('../Controllers');
-// const validate = require('../middlewares/validate');
-
-// const router = express.Router();
-
-// // Ruta para crear un nuevo Pokémon
-// router.post('/create-pokemon', validate, async (req, res) => {
-//     try {
-//         const create = await createNewPokemon(req.body);
-//         res.send(create);
-//     } catch (error) {
-//         console.error("Error en la creación del Pokémon:", error);
-//         res.status(500).send("Error interno en el servidor al crear el Pokémon");
-//     }
-// });
-
-// module.exports = router;
+//Validar desde el back

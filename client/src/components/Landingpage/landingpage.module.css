@@ -1,0 +1,53 @@
+/* Landing.module.css */
+
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+
+.conteinerLandingPage {
+    background-image: url("../../images/imagenfondo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh; /* 100% of the viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content vertically */
+    justify-content: flex-start; /* Center content horizontally */
+}
+
+.conteinerLandingPage h1 {
+    text-align: center;
+    font-size: 80px;
+    font-family: Titillium Web;
+    font-weight: bold;
+    color: black;
+    margin: 0 0 40px;
+    font-size: 70px;
+    text-shadow: 3px 3px 3px white;
+}
+
+.conteinerLandingPage button {
+    background-color: #745dda;
+    color: white;
+    padding: 20px 40px; /* Ajusta el tamaño del botón según tus preferencias */
+    margin: 20px 0; /* Añade margen para separar el botón del texto */
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+    box-shadow: 3px 3px 3px rgb(151, 166, 248);
+}
+
+.button:hover{
+    opacity: 0.95;
+}
+.button:active{
+    transform: translate(6px);
+}
+
+
+
+
+

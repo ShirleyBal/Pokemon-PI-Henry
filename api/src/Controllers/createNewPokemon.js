@@ -1,8 +1,9 @@
 const {Pokemon,Type} =require('../db')
 module.exports=async({name,image,life,stroke,defending,speed,height,weight,type})=>{
   try {
-    // console.log(name,image,life,stroke,defending,speed,height,weight); //descomentar cuando se conecte con front
-    const typedb=await Type.findOne({where:{name:type}})//buscamos el type que esta en nuestra db 
+    console.log(name,image,life,stroke,defending,speed,height,weight); //descomentar cuando se conecte con front
+    const typedb=await Type.findAll({where:{name:type}})//buscamos el type que esta en nuestra db 
+    console.log(typedb,"hooooooooooolaaaaaaa")
     const create = await Pokemon.create({
         name,
         image,

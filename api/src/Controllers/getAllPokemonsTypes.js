@@ -6,9 +6,7 @@ module.exports = async () => {
     if(!typesDb.length){///si no encontramos nada entonces hacemos la peticion a la api y
       const request = await axios.get("https://pokeapi.co/api/v2/type");
       const types = request.data?.results.map(i=>i.name);//array con nombre de los tipos de pokemones
-      
       // procedemos a guardar los resultados en nuestra db :
-       
       await types.forEach(element => {//for each es igual a "por cada ", en este caso por cada tipo dentro array crearemos un nuevo dato en la db
           Type.create({name:element})
         });

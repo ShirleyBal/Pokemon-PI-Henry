@@ -5,9 +5,9 @@ const { reduceApiData } = require("../Utils");
 module.exports = async () => {
   try { 
     const pokemonsDB = await Pokemon.findAll({
-      include: [
+     include: [
         { model: Type, attributes: ["name"]}
-      ], 
+      ],  
     }); ///buscamos en nuestra db si hay informacion de pokemones
     const pokemonsApiPageOne = await axios.get(URL_API);
   

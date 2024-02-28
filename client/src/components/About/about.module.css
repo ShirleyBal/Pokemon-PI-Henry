@@ -1,0 +1,37 @@
+
+.aboutconteiner {
+  background: url('https://i.pinimg.com/originals/2b/3b/04/2b3b04771ccca26c3dd96d781b0117ca.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh; /* 100% of the viewport height */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content vertically */
+} 
+
+.aboutsquare {
+  background-color: #d5d95b; 
+  border-radius: 87px 87px 87px 87px;
+  -moz-border-radius: 87px 87px 87px 87px;
+  -webkit-border-radius: 87px 87px 87px 87px;
+  border: 0px solid #000000;
+  position: absolute;
+  top: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aboutsquare h1 {
+  text-align: center;
+  font-size: 80px;
+  font-family: Titillium Web;
+  font-weight: bold;
+  color: black;
+  margin: 0 0 40px;
+  font-size: 70px;
+  text-shadow: 3px 3px 3px white;
+}
+
